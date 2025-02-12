@@ -1,5 +1,5 @@
 document.getElementById("yesButton").addEventListener("click", function() {
-    document.getElementById("response").innerText = "Yay! I love you! ❤️";
+    document.getElementById("response").innerText = "Yay! I love you, Nicole! ❤️";
     document.getElementById("specialPhoto").classList.remove("hidden");
 });
 
