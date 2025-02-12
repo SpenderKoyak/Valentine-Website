@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Will You Be My Valentine? ❤️</h1>
+        <img src="heart.png" alt="Cute Heart" class="heart-img">  <!-- Optional Image -->
+        
+        <div class="buttons">
+            <button id="yesButton">Yes</button>
+            <button id="noButton">No</button>
+        </div>
+
+        <p id="response"></p>
+<img id="specialPhoto" src="us.jpg" alt="Us" class="hidden">
+    </div>
+
+    <!-- Floating Hearts Animation -->
+    <div id="hearts-container"></div>
+
+    <!-- Background Music -->
+    <audio id="bgMusic" loop>
+        <source src="love-song.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        // Play music when the user clicks anywhere
+        window.addEventListener('click', function() {
+            const music = document.getElementById("bgMusic");
+            if (music.paused) {
+                music.play().catch(error => console.log("Autoplay blocked:", error));
+            }
+        }, { once: true });
+    </script>
+
+    <!-- Load External JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

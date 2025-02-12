@@ -1,0 +1,131 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #ffe6e6;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevents button from going out of screen */
+}
+
+.container {
+    margin-top: 100px;
+}
+
+h1 {
+    color: #d6336c;
+    font-size: 36px;
+}
+
+.heart-img {
+    width: 100px;
+    height: auto;
+    margin: 20px 0;
+}
+
+button {
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+#yesButton {
+    background-color: #ff4d79;
+    color: white;
+}
+
+#yesButton:hover {
+    background-color: #ff1a5a;
+}
+
+#noButton {
+    background-color: #666;
+    color: white;
+    position: absolute;
+}
+
+p {
+    font-size: 24px;
+    color: #d6336c;
+    font-weight: bold;
+    margin-top: 20px;
+}#hearts-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.heart {
+    position: absolute;
+    bottom: 0;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    clip-path: polygon(50% 0%, 100% 35%, 82% 100%, 50% 80%, 18% 100%, 0% 35%);
+    animation: float 4s linear infinite;
+    opacity: 0.7;
+}
+
+@keyframes float {
+    0% { transform: translateY(0) scale(1); opacity: 1; }
+    100% { transform: translateY(-100vh) scale(1.5); opacity: 0; }
+}
+#hearts-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.heart {
+    position: absolute;
+    bottom: 0;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    clip-path: polygon(50% 0%, 100% 35%, 82% 100%, 50% 80%, 18% 100%, 0% 35%);
+    animation: float 4s linear infinite;
+    opacity: 0.7;
+}
+
+@keyframes float {
+    0% { transform: translateY(0) scale(1); opacity: 1; }
+    100% { transform: translateY(-100vh) scale(1.5); opacity: 0; }
+}
+
+.hidden {
+    display: none;
+}
+
+#specialPhoto {
+    width: 250px;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+button {
+    font-size: 18px;
+    padding: 15px 25px;
+    border-radius: 10px;
+}
+
+body {
+    max-width: 100%;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    text-align: center;
+}
+
+.heart-img {
+    max-width: 80%;
+    height: auto;
+}
